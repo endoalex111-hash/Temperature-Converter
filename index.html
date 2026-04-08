@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="This is a Temperature Converter Project.">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="container__header">
+
+            <h2>Temperature Converter</h2>
+            <p>Enter the temperature, select units and submit</p>
+
+        </div>
+
+        <div class="container__inputs">
+
+            <input id="unitInput" type="text" placeholder="0.00">
+
+            <div class="container__dropdown" data-type="from">
+                <div class="dropdownBtn">
+                    <span class="dropdownLabel">From Unit</span>
+                    <span class="arrow">v</span>
+                </div>
+
+                <div class="dropdownList">
+                    <div class="dropdownItem">
+                        <span class="item-text">Fahrenheit</span>
+                    </div>
+                    <div class="dropdownItem">
+                        <span class="item-text">Celsius</span>
+                    </div>
+                    <div class="dropdownItem">
+                        <span class="item-text">Kelvin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container__dropdown" data-type="to">
+                <div class="dropdownBtn">
+                    <span class="dropdownLabel">To Unit</span>
+                    <span class="arrow">v</span>
+                </div>
+
+                <div class="dropdownList">
+                    <div class="dropdownItem">
+                        <span class="item-text">Fahrenheit</span>
+                    </div>
+                    <div class="dropdownItem">
+                        <span class="item-text">Celsius</span>
+                    </div>
+                    <div class="dropdownItem">
+                        <span class="item-text">Kelvin</span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="convertBtn">Convert</button>
+
+        </div>
+
+        <div class="container__result">
+            <p id="convertResult"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
